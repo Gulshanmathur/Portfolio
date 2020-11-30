@@ -1,0 +1,27 @@
+// span {
+//     display: inline-block;
+//     perspective: 1400px;
+//     transform-style: preserve3d;
+//   }
+  
+@keyframes custom-animation-in {
+    from {
+      opacity: 0;
+      transform: rotateX(90deg) scale(2);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  @keyframes custom-animation-out {
+    from {
+      opacity: 1;
+      transform: none;
+    }
+    to {
+      opacity: 0;
+      transform: rotateX(-90deg) scale(0);
+    }
+  }
