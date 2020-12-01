@@ -75,19 +75,22 @@ export default function About(props) {
     }, []);
     return (
         <section className="about">
-            <div className="ist_about_div" data-aos="fade-left">
-                <img className="" src={img} alt="fireSpot" style={{height: 300, width: 300, borderRadius: 15}}/>
+            <div style={{display:"flex"}}>
+                <div className="nd_about_div" data-aos="fade-right">
+                    <p className="ist_para">{props.string}</p>
+                </div>
+                <div className="ist_about_div" data-aos="fade-left">
+                    <img className="" src={img} alt="fireSpot" style={{height: 300, width: 300, borderRadius: 15}}/>
+                </div>
             </div>
-            <div className="nd_about_div" data-aos="fade-right">
-                <p className="ist_para">{props.string}</p>
+            <div style={{display:"flex"}}>
+                <div className="ist_skill_div" data-aos="flip-right">
+                    <img src={img1} alt="fireSpot" style={{height: 270, width: 270, borderRadius: 500}}/>
+                </div>
+                <div className="nd_skill_div" data-aos="fade-left">
+                    <p className="ist_para">{props.string1}</p>
+                </div>
             </div>
-            <div className="ist_skill_div" data-aos="flip-right">
-                <img src={img1} alt="fireSpot" style={{height: 270, width: 270, borderRadius: 500}}/>
-            </div>
-            <div className="nd_skill_div" data-aos="fade-left">
-                <p className="ist_para">{props.string1}</p>
-            </div>
-
         </section>
     );
 }
