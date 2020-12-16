@@ -90,7 +90,7 @@
     color: black;
 }
 
-@media screen and (max-width: 580px) {
+@media only screen and (max-width: 580px) {
     #navbar {
         padding: 20px 10px !important;
     }
@@ -103,6 +103,9 @@
 
     #navbar-right {
         float: none;
+    }
+    .quate{
+        -webkit-line-clamp: 12;
     }
 }
 
@@ -229,14 +232,14 @@ a {
 .social {
     position: fixed;
     top: 50%;
-    right:-5px;
+    right: -5px;
 }
 
 .social ul {
     padding: 0px;
     position: absolute;
     top: 50%;
-    right:0;
+    right: 0;
 }
 
 .social ul li {
