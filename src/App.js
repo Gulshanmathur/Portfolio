@@ -18,7 +18,7 @@ export default function App() {
         document.getElementsByClassName("quate")[0].style="font-size:2rem";
         }else {
        document.getElementById("navbar").style.padding = "70px 10px";
-       document.getElementsByClassName("anim_boy")[0].style.width = "130px";
+       document.getElementsByClassName("anim_boy ")[0].style.width = "130px";
        document.getElementsByClassName("anim_boy")[0].style.height = "130px";
        document.getElementsByClassName("quate")[0].style="font-size:2.5rem";
        
